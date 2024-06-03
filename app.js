@@ -19,7 +19,7 @@ $(document).ready(function() {
         sections.each(function () {
             const sectionTop = $(this).offset().top;
             const sectionHeight = $(this).outerHeight();
-            console.log(sectionHeight)
+            
             // Periksa jika bagian ini dominan atau tidak
             const isDominant = (sectionTop <= currentScroll + windowHeight / 2) && (sectionTop + sectionHeight > currentScroll + windowHeight / 2);
     
