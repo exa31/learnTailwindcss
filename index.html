@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <nav class="w-full z-10 fixed top-0 flex flex-wrap justify-between items-center h-15 bg-gray-800 text-white">
+        <div class="flex flex-shrink-0">
+            <h1 class="p-3 focus:border-slate-300 text-2xl font-bold">EXA.</h1>
+        </div>
+        <div class="flex m-2 p-2 lg:hidden toggleNav focus:border-slate-300 rounded-lg">
+            <svg class="openNav " xmlns="http://www.w3.org/2000/svg" width="14" height="14" id="list">
+                <g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1h13M1 7h13M1 13h13"></path>
+                </g>
+            </svg>
+            <svg class="hidden closeNav" xmlns="http://www.w3.org/2000/svg" width="14" height="14" id="x">
+                <g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M13 1 1 13M1 1l12 12"></path>
+                </g>
+            </svg>
+        </div>
+        <div
+            class="pl-3.5 w-full navList lg:h-max h-0 duration-300 items-center lg:justify-between  overflow-hidden lg:w-auto lg:flex block lg:flex-grow lg:flex-row">
+            <div class="flex lg:flex-row flex-col">
+                <a href="#about" class="opacity-70 w-max hover:opacity-100 duration-300 m-2">About me</a>
+                <a href="#product" class="opacity-70 w-max hover:opacity-100 duration-300 m-2">Recent Work</a>
+                <a href="#skill" class="opacity-70 w-max hover:opacity-100 duration-300 m-2">Skill Framework</a>
+            </div>
+            <div class="lg:p-2 p-2">
+                <a href="#contact"><button
+                        class=" hover:bg-zinc-700 p-1.5 border-2 opacity-70 hover:opacity-100 duration-300 border-white">Contact
+                        Me</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="w-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5 sm:p-10">
+        <div class="pt-16 text-5xl font-bold w-auto text-center text-white">
+            <h1>About Me</h1>
+            <div class="pt-5">
+                <div class="w-1/4 bg-pink-400 h-1 rounded mx-auto"></div>
+            </div>
+        </div>
+        <div class="py-5 text-center text-white">
+            <h2 class="text-4xl font-semibold">Hai, Aku Eka. Senang berjumpa dengan Anda.</h2>
+            <p class="w-3/4 text-l py-4 mx-auto">Saya seorang programmer dan juga network engineer, selain dapat membuat
+                website. Saya juga bisa mengkonfigurasi perangkat jaringan seperti router dan switch.</p>
+            <img src="img/profil.jpg" alt="My photo" class="rounded-full w-60 h-60 mx-auto">
+        </div>
+        <div class="grid h-auto grid-cols-1 rounded-2xl lg:grid-cols-3 bg-white m-4 p-4 gap-10">
+            <div class="bg-white p-10 text-center shadow-2xl">
+                <svg class="h-32 mx-auto my-2" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" id="Code">
+                    <defs>
+                        <linearGradient id="a">
+                            <stop offset="0" stop-color="#140dff" class="stopColor000092 svgShape"></stop>
+                            <stop offset="1" stop-color="#0700ff" class="stopColorff00f3 svgShape"></stop>
+                        </linearGradient>
+                        <linearGradient id="b" x1="2" x2="28" y1="17" y2="17" gradientUnits="userSpaceOnUse"
+                            xlink:href="#a"></linearGradient>
+                    </defs>
+                    <path fill="url(#b)"
+                        d="M2.5 3a.5.5 0 0 0-.5.5v22a.5.5 0 0 0 .5.5h4.25v-1H3V8h24v10.236c.01.048.034.09.04.139.277-.227.62-.34.96-.348V3.5a.5.5 0 0 0-.5-.5h-25zM3 4h24v3H3V4zm1.5 1a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5zm2 0a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5zm2 0a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5zm9.02 5a.5.5 0 0 0-.047.002.5.5 0 0 0-.4.24L12.08 18.23a.5.5 0 1 0 .848.53l4.992-7.989a.5.5 0 0 0-.4-.771zm-7.036 1a.5.5 0 0 0-.343.152l-2.963 2.965a.5.5 0 0 0-.102.12.5.5 0 0 0-.02.033.5.5 0 0 0-.001.001.5.5 0 0 0-.006.014.5.5 0 0 0-.012.024.5.5 0 0 0-.01.027.5.5 0 0 0-.007.023.5.5 0 0 0-.006.022.5.5 0 0 0-.004.02.5.5 0 0 0-.002.013.5.5 0 0 0 .178.479l2.955 2.957a.5.5 0 1 0 .707-.707L8.207 14.5l2.64-2.64a.5.5 0 0 0-.363-.86zm9.016 0a.5.5 0 0 0-.348.86l2.641 2.64-2.64 2.643a.5.5 0 1 0 .706.707l2.961-2.963a.5.5 0 0 0 .028-.744l-.002-.002-2.987-2.989A.5.5 0 0 0 19.5 11zm3.908 7a.5.5 0 0 0-.5.5v.895c-.31.096-.608.217-.896.367l-.63-.627a.5.5 0 0 0-.706 0l-1.543 1.54a.5.5 0 0 0 0 .708l.63.63c-.15.289-.276.587-.372.897H18.5a.5.5 0 0 0-.5.5v2.182a.5.5 0 0 0 .5.5h.893c.096.31.218.61.369.898l-.63.63a.5.5 0 0 0 0 .706l1.544 1.541a.5.5 0 0 0 .707 0l.63-.629c.288.15.586.273.895.37v.892a.5.5 0 0 0 .5.5h2.184a.5.5 0 0 0 .5-.5v-.893c.31-.096.608-.217.896-.367l.63.627a.5.5 0 0 0 .706 0l1.543-1.54a.5.5 0 0 0 0-.708l-.63-.63c.15-.289.276-.587.372-.897h.891a.5.5 0 0 0 .5-.5V23.41a.5.5 0 0 0-.5-.5h-.893a5.384 5.384 0 0 0-.369-.898l.63-.63a.5.5 0 0 0 0-.706l-1.544-1.541a.5.5 0 0 0-.707 0l-.63.629a5.373 5.373 0 0 0-.895-.37V18.5a.5.5 0 0 0-.5-.5h-2.184zm.5 1h1.184v.719a.5.5 0 0 0 .388.488c.484.11.944.301 1.364.564a.5.5 0 0 0 .619-.07l.508-.506.836.834-.506.506a.5.5 0 0 0-.07.617c.262.421.451.884.56 1.368a.5.5 0 0 0 .488.39H30v1.182h-.719a.5.5 0 0 0-.488.388c-.11.484-.3.946-.564 1.366a.5.5 0 0 0 .07.619l.508.508-.836.834-.506-.504a.5.5 0 0 0-.617-.07c-.421.262-.884.451-1.368.56a.5.5 0 0 0-.388.486V30h-1.184v-.719a.5.5 0 0 0-.388-.486 4.4 4.4 0 0 1-1.364-.565.5.5 0 0 0-.619.07l-.508.507-.836-.834.506-.506a.5.5 0 0 0 .07-.62 4.403 4.403 0 0 1-.56-1.365.5.5 0 0 0-.488-.39H19V23.91h.719a.5.5 0 0 0 .488-.389c.11-.483.301-.945.564-1.365a.5.5 0 0 0-.07-.619l-.508-.508.836-.834.506.504a.5.5 0 0 0 .617.07c.421-.262.884-.453 1.368-.562a.5.5 0 0 0 .388-.484V19zm-12.283 1.73a.5.5 0 0 0-.5.5v.512c-.144.05-.285.106-.422.172l-.361-.36a.5.5 0 0 0-.707 0l-1.06 1.061a.5.5 0 0 0 0 .707l.36.362a3.853 3.853 0 0 0-.175.421h-.51a.5.5 0 0 0-.5.5v1.5a.5.5 0 0 0 .5.5h.512c.05.145.105.285.172.422l-.36.362a.5.5 0 0 0 0 .707l1.06 1.06a.5.5 0 0 0 .708 0l.361-.361c.138.067.278.124.422.174v.511a.5.5 0 0 0 .5.5h1.5a.5.5 0 0 0 .5-.5v-.511a3.95 3.95 0 0 0 .422-.174l.361.361a.5.5 0 0 0 .707 0l1.06-1.06a.5.5 0 0 0 0-.71l-.359-.359c.067-.137.124-.277.174-.422h.51a.5.5 0 0 0 .5-.5v-1.5a.5.5 0 0 0-.5-.5h-.512a3.855 3.855 0 0 0-.174-.421l.362-.362a.5.5 0 0 0 0-.707l-1.06-1.06a.5.5 0 0 0-.708 0l-.361.361a3.797 3.797 0 0 0-.422-.176v-.51a.5.5 0 0 0-.5-.5h-1.5zm.5 1h.5v.338a.5.5 0 0 0 .389.487c.315.072.617.197.89.369a.5.5 0 0 0 .62-.07l.238-.239.353.354-.238.236a.5.5 0 0 0-.07.62c.17.274.296.574.367.89a.5.5 0 0 0 .486.39H16v.5h-.338a.5.5 0 0 0-.488.39 2.867 2.867 0 0 1-.367.888.5.5 0 0 0 .07.62l.238.24-.353.35-.237-.236a.5.5 0 0 0-.619-.07 2.872 2.872 0 0 1-.89.365.5.5 0 0 0-.391.489v.34h-.5v-.338a.5.5 0 0 0-.389-.489 2.881 2.881 0 0 1-.89-.367.5.5 0 0 0-.62.068l-.238.239-.353-.354.238-.238a.5.5 0 0 0 .07-.617 2.876 2.876 0 0 1-.367-.89.5.5 0 0 0-.486-.391h-.34v-.5h.338a.5.5 0 0 0 .488-.39c.072-.314.196-.616.367-.89a.5.5 0 0 0-.07-.619l-.238-.238.353-.354.237.237a.5.5 0 0 0 .619.07c.274-.171.575-.294.89-.365a.5.5 0 0 0 .391-.487v-.338zm12.375.272A2.51 2.51 0 0 0 22 24.5a2.51 2.51 0 0 0 2.5 2.5 2.51 2.51 0 0 0 2.5-2.5 2.51 2.51 0 0 0-2.5-2.498zm0 1c.826 0 1.5.672 1.5 1.498s-.674 1.5-1.5 1.5-1.5-.674-1.5-1.5.674-1.498 1.5-1.498zm-12.125.707c-.903 0-1.646.743-1.646 1.646 0 .904.743 1.645 1.646 1.645.903 0 1.646-.742 1.646-1.645s-.743-1.646-1.646-1.646zm0 1a.645.645 0 1 1 0 1.291.645.645 0 1 1 0-1.291z"
+                        color="#000" font-family="sans-serif" font-weight="400" overflow="visible">
+                    </path>
+                </svg>
+                <h1 class="text-2xl font-bold mx-0 my-8">Programming</h1>
+                <div class="opacity-70">
+                    <p class="text-xl py-2">Website</p><!--hover opacity-100-->
+                    <hr class="border-gray-300">
+                    <p class="text-xl py-2">Mobile App</p>
+                    <hr class="border-gray-300">
+                    <p class="text-xl py-2">Game</p>
+                    <hr class="border-gray-300">
+                </div>
+                <button
+                    class="text-xl font-semibold text-white w-2/3 p-2 bg-blue-700 opacity-70 duration-300 hover:opacity-100 m-10 rounded-tl-lg rounded-br-lg">Lihat
+                    Portfolio</button>
+            </div>
+            <div class="bg-white p-10 text-center shadow-2xl">
+                <svg class="h-32 mx-auto m-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="Network">
+                    <g fill="#ffbf66" class="color000000 svgShape">
+                        <path
+                            d="M94.241 169.476A60.967 60.967 0 0 0 155.233 230H356.767a60.972 60.972 0 0 0 60.976-59.41 6.5 6.5 0 0 1-.156-1.418A52.385 52.385 0 0 0 356.48 118.39a6.992 6.992 0 0 1-8.367-7.023c.009-.361.008-.714.008-1.075A91.111 91.111 0 0 0 169.357 85.47a7.275 7.275 0 0 1-5.921 5.291C123.988 95.371 94.24 129 94.24 169h-.015a1.172 1.172 0 0 1 .025.348C94.251 169.492 94.248 169.333 94.241 169.476zM398 326V280.673A6.529 6.529 0 0 0 391.237 274H263V236H249v38H120.763A6.529 6.529 0 0 0 114 280.673V326h14V288H384v38z"
+                            fill="#ffbf66" class="color000000 svgShape"></path>
+                        <rect width="151" height="74" x="44" y="353" fill="#ffbf66" class="color000000 svgShape"></rect>
+                        <rect width="151" height="12" x="44" y="441" fill="#ffbf66" class="color000000 svgShape"></rect>
+                        <rect width="151" height="74" x="317" y="353" fill="#ffbf66" class="color000000 svgShape">
+                        </rect>
+                        <rect width="151" height="12" x="317" y="441" fill="#ffbf66" class="color000000 svgShape">
+                        </rect>
+                        <path
+                            d="M160.571 479H139.01l-3.23-12H102.72l-3.23 12H77.929a7 7 0 1 0 0 14h82.642a7 7 0 1 0 0-14zM434.071 479H412.51l-3.23-12H376.22l-3.23 12H351.429a7 7 0 0 0 0 14h82.642a7 7 0 0 0 0-14z"
+                            fill="#ffbf66" class="color000000 svgShape"></path>
+                    </g>
+                </svg>
+                <h1 class="text-2xl font-bold my-8">Networking</h1>
+                <div class="opacity-70">
+                    <p class="text-xl py-2">Routing</p><!--hover opacity-100-->
+                    <hr class="border-gray-300">
+                    <p class="text-xl py-2">Topologi</p>
+                    <hr class="border-gray-300">
+                    <p class="text-xl py-2">Maintenance</p>
+                    <hr class="border-gray-300">
+                </div>
+                <button
+                    class="text-xl font-semibold text-white w-2/3 p-2 bg-blue-700 opacity-70 duration-300 hover:opacity-100 m-10 rounded-lg">Lihat
+                    Portfolio</button>
+            </div>
+            <div class="bg-white p-10 text-center shadow-2xl">
+                <svg class="h-32 mx-auto m-2" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                    image-rendering="optimizeQuality" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" viewBox="0 0 6.827 6.827" id="Copywriting">
+                    <path
+                        d="M4.76794 2.5172c-0.0441811,0 -0.08,-0.0358071 -0.08,-0.0799882l0 -0.935402c0,-0.044189 0.0358189,-0.0799843 0.08,-0.0799843 0.0441811,0 0.08,0.0358031 0.08,0.0799961l0 0.935378c0,0.044189 -0.0358189,0.0800118 -0.08,0.08zm-0.286886 3.79483l-3.76767 0c-0.202303,0 -0.366882,-0.164579 -0.366882,-0.366799l0 -5.0637c0,-0.202295 0.164579,-0.36687 0.366882,-0.36687l3.14739 -3.93701e-006c0.0441811,0 0.08,0.0358228 0.08,0.0800039 0,0.0441693 -0.0358189,0.08 -0.08,0.08l-3.14739 -3.93701e-006c-0.114075,0 -0.20689,0.092811 -0.20689,0.206878l0 5.06369c0,0.114031 0.092815,0.206815 0.20689,0.206815l3.76767 -3.93701e-006c0.114083,0 0.206886,-0.0927717 0.206886,-0.206799l0 -1.85792c0,-0.0441732 0.0358189,-0.0799882 0.08,-0.0799882 0.0441811,-1.1811e-005 0.08,0.0358228 0.08,0.08l0 1.85789c0,0.202232 -0.164583,0.366819 -0.366886,0.366811z"
+                        fill="green" class="color000000 svgShape"></path>
+                    <path
+                        d="M3.94078.78778l0 .504906c0 .0712047.0579291.129142.129122.129142l.504906 0-.634028-.634047zm.827165.794031l-.698039 0c-.159417 0-.289114-.129693-.289114-.289126l0-.698047c0-.0323425.0194882-.0615197.049374-.0739094.0298898-.0124016.0643228-.00552756.0871811.0173465l.907169.907173c.022874.022874.0297205.0572835.0173465.087189-.0123898.029874-.0415551.049374-.0739173.049374zM3.92557 2.17307l-2.65669 0c-.044185 0-.0799961-.0357913-.0799961-.0799843 0-.044185.035811-.0799882.0799961-.0799882l2.65669-.000011811c.0441929 0 .08.0358189.08.08 0 .044189-.0358071.08-.08.0799843zM3.92557 2.76436l-2.65669 0c-.044185 0-.0799961-.035811-.0799961-.0799921 0-.0441811.035811-.08.0799961-.08l2.65669-.00000787402c.0441929 0 .08.0358268.08.0800079 0 .0441772-.0358071.08-.08.0799921zM3.92557 3.35564l-2.65669 0c-.044185 0-.0799961-.0357992-.0799961-.0799921 0-.0441969.035811-.0799882.0799961-.0799882l2.65669-.00000393701c.0441929 0 .08.0358071.08.0799921 0 .0441811-.0358071.08-.08.0799921zM3.51989 3.94692l-2.25101 0c-.044185 0-.0799961-.0358189-.0799961-.08 0-.044189.035811-.08.0799961-.08l2.25101 0c.0441929 0 .08.0358189.08.08 0 .0441693-.0358071.08-.08.08zM3.08694 4.53819l-1.81807 0c-.044185 0-.0799961-.0358031-.0799961-.0799843 0-.044189.035811-.08.0799961-.08l1.81807-.000015748c.0441811 0 .0799843.0358346.0799843.0800157.00000393701.0441732-.0358031.08-.0799843.0799843zM3.08694 5.12946l-1.81807 0c-.044185 0-.0799961-.0358071-.0799961-.0799882 0-.0441811.035811-.08.0799961-.08l1.81807-.000011811c.0441811 0 .0799843.0358307.0799843.0800118.00000393701.0441772-.0358031.08-.0799843.0799882zM3.08694 5.72075l-1.81807 0c-.044185 0-.0799961-.035811-.0799961-.0799921 0-.0441811.035811-.08.0799961-.08l1.81807-.00000787402c.0441811 0 .0799843.0358268.0799843.0800079.00000393701.0441811-.0358031.08-.0799843.0799921zM4.10852 5.41742c-.0128898 0-.0257087-.00311024-.0373228-.00923622l-.596177-.314484c-.0390709-.020626-.0540433-.069-.0334331-.108083l1.11589-2.11543c.020626-.0390787.069-.0540276.108083-.0334291.0390866.0206181.0540433.0690118.0334331.108098l-1.07856 2.04464.45465.239831 1.07856-2.04466c.020622-.0390945.0690118-.0540236.108079-.0334291.0390866.0206024.0540591.069.0334449.108087l-1.11589 2.11542c-.00990157.0187638-.0268504.0328268-.047126.0391063-.00772047.00237795-.0156969.00356693-.0236378.00356693z"
+                        fill="green" class="color000000 svgShape"></path>
+                    <path
+                        d="M4.65153 2.82936l.62422.329264.72061-1.36608c.043752-.0829528.0524449-.178386.0245-.268748-.0279567-.090374-.0890276-.164236-.171988-.207984-.0829409-.043752-.178386-.0524567-.268748-.0245157-.0903622.0279528-.164224.0890433-.207972.171988l-.720622 1.36607zm.657583.517374c-.0125827 0-.0253504-.00297638-.0372677-.00925591l-.765717-.403917c-.0187677-.00990551-.0328386-.0268465-.0391142-.047122-.00626378-.0202677-.00422441-.0421969.00566535-.0609606l.757949-1.43685c.063689-.120748.171024-.209591.302217-.250173.131169-.0406063.269945-.0278465.390681.0358465.120752.063685.209598.171016.250181.302209.0405827.131197.0278622.269945-.0358346.390697l-.757929 1.43684c-.0143465.0271575-.0421102.0426969-.0708307.042689zM3.46846 5.90842c-.012752 0-.0255709-.00301181-.0373071-.00920866-.0276378-.0145906-.0442638-.0439173-.0425551-.0751102l.0438622-.805528c.00240157-.0441102.0399567-.0780433.0842323-.0755118.044126.00238583.0779331.0401102.0755276.0842323l-.0344016.63178.502-.385138c.0350709-.026878.0852913-.020252.112165.0147913.0269055.0350512.0202795.0852756-.0147756.112165l-.640039.491028c-.014252.010937-.0314331.0165-.0487087.0165z"
+                        fill="green" class="color000000 svgShape"></path>
+                    <path
+                        d="M5.65369 3.52848c-.0125984 0-.0253504-.00296063-.0372677-.00924016-.0390709-.0206339-.0540551-.0690118-.0334291-.108094l.709071-1.34421-.273807-.144441c-.0390669-.020622-.0540433-.0690039-.0334331-.108087.020626-.0390827.0690276-.0540276.108083-.0334331l.344559.181756c.0390827.0206102.0540394.0690079.0334409.108091l-.746402 1.41497c-.0143307.0271693-.0420984.0426969-.070815.042685zM5.59663 1.71419c-.00809449 0-.0162638.00123622-.0242638.00370866-.0207205.00641732-.0376535.020374-.047626.0393071l-.379831.720031c-.00998819.018937-.0119488.0407874-.00554331.0615079.00641732.0207087.020374.0376417.0392913.047626.0394331.0208031.088374.00565354.109138-.033748l.379835-.720059c.00997244-.0189213.0119449-.040748.00553937-.0614843-.00641339-.020748-.020374-.0376535-.0393031-.047626 0 0-.000015748-.000011811-.000015748-.000011811-.0116063-.00614173-.0243307-.00923622-.0372205-.00925197zm-.380913 1.0415c-.0385551 0-.0767126-.00934646-.111685-.0277913-.0567362-.0299291-.0984724-.0803071-.117512-.141862-.0190551-.0615827-.0130591-.12672.016874-.183441l.379823-.720047c.0299291-.0567323.0802992-.0984528.141858-.117496.0615709-.0190827.126709-.0130551.183429.0168622l0-.00000393701c.117445.0619528.162583.20789.100638.325323l-.379819.720035c-.0299291.0567323-.0803031.0984646-.141862.117504-.0236102.00729134-.047748.0109173-.0717441.0109173z"
+                        fill="green" class="color000000 svgShape"></path>
+                    <rect width="6.827" height="6.827" fill="none"></rect>
+                </svg>
+                <h1 class="text-2xl font-bold mx-0 my-8">Copywriting</h1>
+                <div class="opacity-70">
+                    <p class="text-xl py-2">Laporan</p><!--hover opacity-100-->
+                    <hr class="border-gray-300">
+                    <p class="text-xl py-2">Content Website</p>
+                    <hr class="border-gray-300">
+                    <p class="text-xl py-2">Landing Page</p>
+                    <hr class="border-gray-300">
+                </div>
+                <button
+                    class="text-xl font-semibold text-white w-2/3 p-2 bg-blue-700 opacity-70 duration-300 hover:opacity-100 m-10 rounded-tr-lg rounded-bl-lg">Lihat
+                    Portfolio</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-screen mx-auto">
+        <div class="flex flex-wrap p-10 justify-around gap-2">
+            <div class="w-full  md:w-4/12">
+                <img class="my-auto rounded-2xl" src="img/framework.jpg" alt="img">
+            </div>
+            <div>
+                <h1 class="text-5xl font-bold  my-2 text-center">Skill Framework</h1>
+                <div class="w-8/12 bg-pink-400 h-1 rounded mx-auto my-4"></div>
+                <div class="opacity-70">
+                    <p>Berikut adalah item dan skala keahlian untuk framework:</p>
+                    <div class="grid grid-cols-2 py-2 items-center pr-2">
+                        <p>Tailwindcss</p>
+                        <div class="w-full gradient-skill h-5 rounded "></div>
+                    </div>
+                    <div class="grid grid-cols-2 py-1 items-center pr-2">
+                        <p>Bootstrap</p>
+                        <div class="w-3/5 gradient-skill h-5 rounded "></div>
+                    </div>
+                    <div class="grid grid-cols-2 py-1 items-center pr-2">
+                        <p>Codeligniter</p>
+                        <div class="w-2/5 gradient-skill h-5 rounded "></div>
+                    </div>
+                    <div class="grid grid-cols-2 py-1 items-center pr-2">
+                        <p>Laravel</p>
+                        <div class="w-3/12 gradient-skill h-5  rounded "></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="max-w-screen bg-green-100 text-center p-12"> 
+        <h1 class="text-5xl font-bold  my-2 ">My Recent Work</h1>
+        <div class="w-3/12 bg-pink-400 h-1 rounded mx-auto my-4"></div>
+        <p class=" opacity-70">Berikut adalah pekerjaan terbaru saya</p>
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img class="rounded-md h-40 mx-auto" src="img/img1.jpg" alt="img1">
+                <h1 class="text-xl font-bold my-2">Sistem Informasi Penelitian</h1>
+                <p class="opacity-70">Sistem Informasi Penelitian untuk dosen dan mahasiswa di Univeritas Lorem</p>
+                <button
+                    class="text-xl m-12 font-semibold text-white w-auto px-5 py-3 bg-blue-700 opacity-70 duration-300 hover:opacity-100 rounded-tl-lg rounded-br-lg">
+                    Detail</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img class="rounded-md h-40 mx-auto" src="img/img1.jpg" alt="img1">
+                <h1 class="text-xl font-bold my-2">Sistem Informasi Perpustakaan</h1>
+                <p class="opacity-70">Sistem Informasi Perpustakaan untuk Perpustakaan kota Lorem</p>
+                <button
+                    class="text-xl font-semibold text-white w-auto px-5 py-3 bg-blue-700 opacity-70 duration-300 hover:opacity-100 m-12 rounded-tl-lg rounded-br-lg">
+                    Detail</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img class="rounded-md h-40 mx-auto" src="img/framework.jpg" alt="img1">
+                <h1 class="text-xl font-bold my-2">Sistem Informasi Keuangan</h1>
+                <p class="opacity-70">Sistem Informasi Keuangan untuk perusahaaan Lorem</p>
+                <button
+                    class="text-xl font-semibold text-white w-auto px-5 py-3 bg-blue-700 opacity-70 duration-300 hover:opacity-100 m-12 rounded-tr-lg rounded-bl-lg">
+                    Detail</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img class="rounded-md h-40 mx-auto" src="img/img1.jpg" alt="img1">
+                <h1 class="text-xl font-bold my-2">Sistem Informasi Asset</h1>
+                <p class="opacity-70">Sistem Informasi Asset untuk Laboratorium Lorem</p>
+                <button
+                    class="text-xl font-semibold text-white w-auto px-5 py-3 bg-blue-700 opacity-70 duration-300 hover:opacity-100 m-12 rounded-tr-lg rounded-bl-lg">
+                    Detail</button>
+            </div>            
+        </div>
+    </section>
+
+    <section class="max-w-screen mx-auto bg-gradient-to-b from-rose-400 via-indigo-500 to-pink-500 text-center lg:p-12 py-12">
+        <h1 class="text-5xl font-bold my-2 ">Contact Me</h1>
+        <div class="lg:w-3/12 w-full bg-pink-400 h-1 rounded lg:mx-auto my-4"></div>
+        <div class="bg-gray-100 lg:w-3/4 mx-auto rounded-lg text-center m-5 p-8">
+            <h1 class="text-2xl font-semibold">Ingin menghubungi saya?</h1>
+            <p class="opacity-70 pt-2 pb-8">Tolong kirimkan pesan</p>
+            <form>
+                <label for="nama" class="font-medium opacity-70">NAMA LENGKAP</label>
+                <input type="text" placeholder="Nama Lengkap" class="w-full mx-auto shadow-md m-3 p-2 rounded-md" id="nama">
+                <label for="email" class="font-medium opacity-70">EMAIL</label>
+                <input type="email" placeholder="Email" class="w-full mx-auto shadow-md m-3 p-2 rounded-md" id="email">
+                <label for="messege" class="font-medium opacity-70">PESAN</label>
+                <textarea rows="4" placeholder="Tuliskan pesan" class="w-full mx-auto shadow-md m-3 p-2 rounded-md" id="messege"></textarea>
+                <button class="text-xl font-semibold text-white w-auto py-3 px-5 bg-blue-700 opacity-70 duration-300 hover:opacity-100 m-4 rounded-lg">KIRIM PESAN</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="max-w-screen text-center">
+        <div class="flex justify-center mt-10 mb-5 gap-4">
+            <a href=""><i class="fa-brands fa-2xl hover:opacity-100 opacity-70 duration-300 fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-2xl hover:opacity-100 opacity-70 duration-300 fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-2xl hover:opacity-100 opacity-70 duration-300 fa-instagram"></i></a>
+        </div> 
+        <h1 class="opacity-70 mb-20">Design with Tailwind</h1>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/cb731b1b9e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
