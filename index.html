@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
 <body>
 
-    <nav class="w-full z-10 fixed top-0 flex flex-wrap justify-between items-center h-15 bg-gray-800 text-white">
+    <nav class="w-full navBar z-10 fixed top-0 flex flex-wrap justify-between items-center h-15 bg-gray-800 text-white">
         <div class="flex flex-shrink-0">
             <h1 class="p-3 focus:border-slate-300 text-2xl font-bold">EXA.</h1>
         </div>
@@ -34,8 +34,8 @@
             class="pl-3.5 w-full navList lg:h-max h-0 duration-300 items-center lg:justify-between  overflow-hidden lg:w-auto lg:flex block lg:flex-grow lg:flex-row">
             <div class="flex lg:flex-row flex-col">
                 <a href="#about" class="opacity-70 w-max hover:opacity-100 duration-300 m-2">About me</a>
-                <a href="#product" class="opacity-70 w-max hover:opacity-100 duration-300 m-2">Recent Work</a>
                 <a href="#skill" class="opacity-70 w-max hover:opacity-100 duration-300 m-2">Skill Framework</a>
+                <a href="#work" class="opacity-70 w-max hover:opacity-100 duration-300 m-2">Recent Work</a>
             </div>
             <div class="lg:p-2 p-2">
                 <a href="#contact"><button
@@ -45,7 +45,7 @@
         </div>
     </nav>
 
-    <section class="w-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5 sm:p-10">
+    <section class="w-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5 sm:p-10" id="about">
         <div class="pt-16 text-5xl font-bold w-auto text-center text-white">
             <h1>About Me</h1>
             <div class="pt-5">
@@ -152,7 +152,7 @@
         </div>
     </section>
 
-    <section class="max-w-screen mx-auto">
+    <section class="max-w-screen mx-auto p-10" id="skill">
         <div class="flex flex-wrap p-10 justify-around gap-2">
             <div class="w-full  md:w-4/12">
                 <img class="my-auto rounded-2xl" src="img/framework.jpg" alt="img">
@@ -184,7 +184,7 @@
         </div>
     </section>
     
-    <section class="max-w-screen bg-green-100 text-center p-12"> 
+    <section class="max-w-screen bg-green-100 text-center p-12" id="work"> 
         <h1 class="text-5xl font-bold  my-2 ">My Recent Work</h1>
         <div class="w-3/12 bg-pink-400 h-1 rounded mx-auto my-4"></div>
         <p class=" opacity-70">Berikut adalah pekerjaan terbaru saya</p>
@@ -224,7 +224,7 @@
         </div>
     </section>
 
-    <section class="max-w-screen mx-auto bg-gradient-to-b from-rose-400 via-indigo-500 to-pink-500 text-center lg:p-12 py-12">
+    <section class="max-w-screen mx-auto bg-gradient-to-b from-rose-400 via-indigo-500 to-pink-500 text-center lg:p-12 py-12" id="contact">
         <h1 class="text-5xl font-bold my-2 ">Contact Me</h1>
         <div class="lg:w-3/12 w-full bg-pink-400 h-1 rounded lg:mx-auto my-4"></div>
         <div class="bg-gray-100 lg:w-3/4 mx-auto rounded-lg text-center m-5 p-8">

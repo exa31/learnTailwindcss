@@ -10,3 +10,7 @@
             #833ab4,#fd1d1d,#fcb045
         );
 }
+
+.active {
+    opacity: 1!important;
+}
